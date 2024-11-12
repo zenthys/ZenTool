@@ -62,12 +62,12 @@ def LINKEDIN():
         STATUS.append(Fore.GREEN + "Online" + Fore.RESET)
         
         # In ra thông tin tài khoản mà không cần hiển thị dạng bảng
-        print(f'\033[1;36m [{i}] \033[1;91m➭ \033[1;97mTài Khoản|\033[1;93m {usernametk} \033[1;91m=> \033[1;97mStatus| \033[1;93m {STATUS[-1]}')
+        print(f'\033[1;36m [{i}] \033[1;91m➭ \033[1;97m[Tài Khoản:\033[1;93m {usernametk}] \033[1;91m➭ \033[1;97m[Trạng Thái:\033[1;93m {STATUS[-1]}]')
         
         i += 1
         print(Fore.RED+'_________________________________________________________')
     # Yêu cầu người dùng chọn tài khoản bằng cách nhập số thứ tự
-    choose = int(input('\033[1;36m[Nhập Tài Khoản] '))
+    choose = int(input('\033[1;36m[Nhập Tài Khoản] :'))
     os.system('cls' if os.name== 'nt' else 'clear')
     if choose >=1 or choose <= len(user_linkedin1) :
         user_tiktok1 = user_linkedin1[choose-1:choose]
@@ -588,7 +588,7 @@ def LINKEDIN():
                                             f"\033[1;31m\033[1;36m{dem}\033[1;31m\033[1;97m | "
                                             f"\033[1;33m{h}:{m}:{s}\033[1;31m\033[1;97m | "
                                             f"\033[1;32mDone\033[1;31m\033[1;97m | "
-                                            f"\033[1;31mlike\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
+                                            f"\033[1;31mLike\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
                                             f"\033[1;32m+{prices} \033[1;97m| "
                                             f"\033[1;33m{tong} VNĐ"
                                         )
@@ -626,7 +626,6 @@ def banner():
 \033[1;37m ███╔╝  ██╔══╝  ██║╚██╗██║
 \033[1;37m███████╗███████╗██║ ╚████║
 \033[1;37m╚══════╝╚══════╝╚═╝  ╚═══╝
-\033[97m═════════════════════════════
 
 """
  for X in banner:
@@ -636,7 +635,7 @@ def banner():
 
 def LIST():
     banner()
-    print("\033[1;32mNhập \033[1;31m1 \033[1;33mđể vào \033[1;34mTool Linkedin\033[1;33m")
+    print("\033[1;37mĐã nhập \033[1;36mAuthorization \033[1;37mcũ, xóa tệp \033[1;36muser.txt \033[1;37mđể nhập lại")
 os.system('cls' if os.name== 'nt' else 'clear')
 banner()
 checkfile = os.path.isfile('user.txt')
@@ -938,13 +937,13 @@ if checkurl1['status']== 200 :
         print(Fore.GREEN+'\033[1;97m[\033[1;97m] \033[1;32mTổng Tiền : '+Fore.YELLOW+str(coin))
         print(Fore.RED+'_________________________________________________________')
         LIST()
-        print(Fore.RED+'Nhập 2 Để Xóa Authorization Hiện Tại')
-        choose = int(input(Fore.WHITE+'Nhập Lựa Chọn : '))
+        
+        choose = 1
         if choose == 1:
             os.system('cls' if os.name== 'nt' else 'clear')
             banner()
             ip = requests.get('https://api.ipify.org?format=json').json()
-            print(Fore.GREEN + 'Danh Sách Tài Khoản'+ Fore.RED+'         Ip : '+Fore.GREEN+str(ip['ip']))
+            print(Fore.GREEN + '[Danh Sách Tài Khoản]'+ Fore.RED+'                [IP] '+Fore.GREEN+str(ip['ip']))
             print(Fore.RED+'_________________________________________________________\n')
 
             LINKEDIN()
