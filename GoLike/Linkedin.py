@@ -161,6 +161,7 @@ def LINKEDIN():
                                         print(chuoi) 
                                     
                                     else:
+                                            sys.exit()
                                             skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                             PARAMS = {
                                             'ads_id' : ads_id,
@@ -243,6 +244,7 @@ def LINKEDIN():
                                         )
                                         print(chuoi) 
                                     else:
+                                            sys.exit()
                                             skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                             PARAMS = {
                                             'ads_id' : ads_id,
@@ -311,6 +313,7 @@ def LINKEDIN():
                                             )
                                             print(chuoi) 
                                         else:
+                                                sys.exit()
                                                 skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                                 PARAMS = {
                                                 'ads_id' : ads_id,
@@ -384,6 +387,7 @@ def LINKEDIN():
                                         )
                                         print(chuoi) 
                                     else:
+                                            sys.exit()
                                             skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                             PARAMS = {
                                             'ads_id' : ads_id,
@@ -452,6 +456,7 @@ def LINKEDIN():
                                             )
                                             print(chuoi) 
                                         else:
+                                                sys.exit()
                                                 skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                                 PARAMS = {
                                                 'ads_id' : ads_id,
@@ -594,6 +599,7 @@ def LINKEDIN():
                                         )
                                         print(chuoi) 
                         else:
+                                sys.exit()
                                 skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                 PARAMS = {
                                 'ads_id' : ads_id,
@@ -940,6 +946,7 @@ if checkurl1['status']== 200 :
         
         choose = 1
         if choose == 1:
+            time.sleep(1.5)
             os.system('cls' if os.name== 'nt' else 'clear')
             banner()
             ip = requests.get('https://api.ipify.org?format=json').json()
