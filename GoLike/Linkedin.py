@@ -171,6 +171,7 @@ def LINKEDIN():
                                             if checkskipjob['status'] == 200:
                                                 message = checkskipjob['message']
                                                 print(Fore.RED+str(message))
+                                                sys.exit()
                                                 PARAMSr = {
                                                 'ads_id' : ads_id,
                                                 'account_id' : account_id,
@@ -252,6 +253,7 @@ def LINKEDIN():
                                             if checkskipjob['status'] == 200:
                                                 message = checkskipjob['message']
                                                 print(Fore.RED+str(message))
+                                                sys.exit()
                                                 PARAMSr = {
                                                 'ads_id' : ads_id,
                                                 'account_id' : account_id,
@@ -319,6 +321,7 @@ def LINKEDIN():
                                                 if checkskipjob['status'] == 200:
                                                     message = checkskipjob['message']
                                                     print(Fore.RED+str(message))
+                                                    sys.exit()
                                                     PARAMSr = {
                                                     'ads_id' : ads_id,
                                                     'account_id' : account_id,
@@ -391,6 +394,7 @@ def LINKEDIN():
                                             if checkskipjob['status'] == 200:
                                                 message = checkskipjob['message']
                                                 print(Fore.RED+str(message))
+                                                sys.exit()
                                                 PARAMSr = {
                                                 'ads_id' : ads_id,
                                                 'account_id' : account_id,
@@ -459,6 +463,7 @@ def LINKEDIN():
                                                 if checkskipjob['status'] == 200:
                                                     message = checkskipjob['message']
                                                     print(Fore.RED+str(message))
+                                                    sys.exit()
                                                     PARAMSr = {
                                                     'ads_id' : ads_id,
                                                     'account_id' : account_id,
@@ -599,6 +604,7 @@ def LINKEDIN():
                                 if checkskipjob['status'] == 200:
                                     message = checkskipjob['message']
                                     print(Fore.RED+str(message))
+                                    sys.exit()
                                     PARAMSr = {
                                     'ads_id' : ads_id,
                                     'account_id' : account_id,
