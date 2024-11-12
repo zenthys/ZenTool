@@ -92,9 +92,9 @@ def LINKEDIN():
             readfile.close()
         os.system('cls' if os.name== 'nt' else 'clear')
         banner()
-        print("\033[1;36m| Nhập Số Lượng Job |")
-        choose = input('\033[1;36m Nhập Số Lượng Job :  ')
-        print("\033[1;36m Delay Auto : 11s ")
+        print("\033[1;36m| Jobs Auto : 200 |")
+        print("\033[1;36m| Delay Auto: 11s |")
+        choose = 200
         DELAY = 11
         print("\033[97m════════════════════════════════════════════════")
         for i in range(choose):
@@ -173,7 +173,7 @@ def LINKEDIN():
                                             if checkskipjob['status'] == 200:
                                                 message = checkskipjob['message']
                                                 print(Fore.RED+str(message))
-                                                sys.exit()
+                                                
                                                 PARAMSr = {
                                                 'ads_id' : ads_id,
                                                 'account_id' : account_id,
@@ -255,7 +255,7 @@ def LINKEDIN():
                                             if checkskipjob['status'] == 200:
                                                 message = checkskipjob['message']
                                                 print(Fore.RED+str(message))
-                                                sys.exit()
+                                                
                                                 PARAMSr = {
                                                 'ads_id' : ads_id,
                                                 'account_id' : account_id,
@@ -323,7 +323,7 @@ def LINKEDIN():
                                                 if checkskipjob['status'] == 200:
                                                     message = checkskipjob['message']
                                                     print(Fore.RED+str(message))
-                                                    sys.exit()
+                                                    
                                                     PARAMSr = {
                                                     'ads_id' : ads_id,
                                                     'account_id' : account_id,
@@ -396,7 +396,7 @@ def LINKEDIN():
                                             if checkskipjob['status'] == 200:
                                                 message = checkskipjob['message']
                                                 print(Fore.RED+str(message))
-                                                sys.exit()
+                                                
                                                 PARAMSr = {
                                                 'ads_id' : ads_id,
                                                 'account_id' : account_id,
@@ -465,7 +465,7 @@ def LINKEDIN():
                                                 if checkskipjob['status'] == 200:
                                                     message = checkskipjob['message']
                                                     print(Fore.RED+str(message))
-                                                    sys.exit()
+                                                    
                                                     PARAMSr = {
                                                     'ads_id' : ads_id,
                                                     'account_id' : account_id,
@@ -606,7 +606,7 @@ def LINKEDIN():
                                 if checkskipjob['status'] == 200:
                                     message = checkskipjob['message']
                                     print(Fore.RED+str(message))
-                                    sys.exit()
+                                    
                                     PARAMSr = {
                                     'ads_id' : ads_id,
                                     'account_id' : account_id,
@@ -627,8 +627,9 @@ def banner():
 \033[1;36m  ███╔╝ █████╗  ██╔██╗ ██║
 \033[1;37m ███╔╝  ██╔══╝  ██║╚██╗██║
 \033[1;37m███████╗███████╗██║ ╚████║
-\033[1;37m╚══════╝╚══════╝╚═╝  ╚═══╝
-
+\033[1;37m╚══════╝╚══════╝╚═╝  ╚═══╝ \033[1;31mv1.0
+\033[1;37m
+\033[1;36mĐang đăng nhập !
 """
  for X in banner:
   sys.stdout.write(X)
@@ -924,7 +925,7 @@ url1 = 'https://gateway.golike.net/api/users/me'
 checkurl1 = ses.get(url1,headers=headers).json()
     #user
 if checkurl1['status']== 200 :
-        print('\033[1;97mĐăng nhập thành công !')
+        print('\033[1;96mĐăng nhập thành công !')
         time.sleep(3)
         os.system('cls' if os.name== 'nt' else 'clear')
         # banner()
@@ -953,5 +954,5 @@ if checkurl1['status']== 200 :
         elif choose == 2:
                 os.remove('user.txt')
 else:
-    print(Fore.RED+'\033[1;97mĐăng nhập thất bại !')
+    print(Fore.RED+'\033[1;96mĐăng nhập thất bại !')
     os.remove('user.txt')
