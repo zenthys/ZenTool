@@ -19,7 +19,12 @@ except ImportError:
 def countdown(time_sec):
     for remaining_time in range(time_sec, -1, -1):
         colors = [
-            "\033[1;46m[Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;36m[Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;36m[Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;36m[Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;36m[Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;36m[Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;36m[Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
 
         ]
         for color in colors:
