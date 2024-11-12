@@ -19,20 +19,22 @@ except ImportError:
 def countdown(time_sec):
     for remaining_time in range(time_sec, -1, -1):
         colors = [
-            "\033[1;36mZenTool \033[1;31m\033[1;32m",
-            "\033[1;32mZenTool \033[1;31m\033[1;32m",
-            "\033[1;37mZenTool \033[1;31m\033[1;32m",
-            "\033[1;34mZenTool \033[1;31m\033[1;32m",
-            "\033[1;34mZenTool \033[1;31m\033[1;32m",
-            "\033[1;37mZenTool \033[1;31m\033[1;32m",
-            "\033[1;33mZenTool \033[1;31m\033[1;32m",
+            "\033[1;36m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;32m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;37m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;34m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;34m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;37m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;33m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;35m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;39m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
         ]
         for color in colors:
-            print(f"\r{color}|{remaining_time}| \033[1;31m", end="")
+            print(f"\r{color}[{remaining_time}] \033[1;31m", end="")
             time.sleep(0.12)
                                   
     print("\r                          \r", end="") 
-    print("\033[1;35mĐang Nhận Tiền         ",end = "\r")
+    print("\036[1;35mĐang Nhận Tiền         ",end = "\r")
     # while time_sec:
     #     mins, secs = divmod(time_sec, 60)
         
@@ -62,7 +64,7 @@ def LINKEDIN():
         STATUS.append(Fore.GREEN + "Online" + Fore.RESET)
         
         # In ra thông tin tài khoản mà không cần hiển thị dạng bảng
-        print(f'\033[1;36m [{i}] \033[1;91m➭ \033[1;97m[Tài Khoản:\033[1;93m {usernametk}] \033[1;91m➭ \033[1;97m[Trạng Thái:\033[1;93m {STATUS[-1]}]')
+        print(f'\033[1;36m [{i}] \033[1;91m➭ \033[1;97m[Tài Khoản:\033[1;93m {usernametk}\033[1;97m] \033[1;91m➭ \033[1;97m[Trạng Thái:\033[1;93m {STATUS[-1]}]')
         
         i += 1
         print(Fore.RED+'_________________________________________________________')
@@ -90,9 +92,9 @@ def LINKEDIN():
             readfile.close()
         os.system('cls' if os.name== 'nt' else 'clear')
         banner()
-        print("\033[1;36m| Số Lượng Job : 200 |")
-        print("\033[1;36m| Delay : 11s |")
-        choose = 200
+        print("\033[1;36m| Nhập Số Lượng Job |")
+        choose = input('\033[1;36m Nhập Số Lượng Job :  ')
+        print("\033[1;36m Delay Auto : 11s ")
         DELAY = 11
         print("\033[97m════════════════════════════════════════════════")
         for i in range(choose):
@@ -161,7 +163,6 @@ def LINKEDIN():
                                         print(chuoi) 
                                     
                                     else:
-                                            sys.exit()
                                             skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                             PARAMS = {
                                             'ads_id' : ads_id,
@@ -244,7 +245,6 @@ def LINKEDIN():
                                         )
                                         print(chuoi) 
                                     else:
-                                            sys.exit()
                                             skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                             PARAMS = {
                                             'ads_id' : ads_id,
@@ -313,7 +313,6 @@ def LINKEDIN():
                                             )
                                             print(chuoi) 
                                         else:
-                                                sys.exit()
                                                 skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                                 PARAMS = {
                                                 'ads_id' : ads_id,
@@ -387,7 +386,6 @@ def LINKEDIN():
                                         )
                                         print(chuoi) 
                                     else:
-                                            sys.exit()
                                             skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                             PARAMS = {
                                             'ads_id' : ads_id,
@@ -456,7 +454,6 @@ def LINKEDIN():
                                             )
                                             print(chuoi) 
                                         else:
-                                                sys.exit()
                                                 skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                                 PARAMS = {
                                                 'ads_id' : ads_id,
@@ -599,7 +596,6 @@ def LINKEDIN():
                                         )
                                         print(chuoi) 
                         else:
-                                sys.exit()
                                 skipjob = 'https://gateway.golike.net/api/advertising/publishers/linkedin/skip-jobs'
                                 PARAMS = {
                                 'ads_id' : ads_id,
@@ -946,7 +942,7 @@ if checkurl1['status']== 200 :
         
         choose = 1
         if choose == 1:
-            time.sleep(1.5)
+            time.sleep(2)
             os.system('cls' if os.name== 'nt' else 'clear')
             banner()
             ip = requests.get('https://api.ipify.org?format=json').json()
