@@ -19,13 +19,13 @@ except ImportError:
 def countdown(time_sec):
     for remaining_time in range(time_sec, -1, -1):
         colors = [
-            "\033[1;37mH\033[1;36mu\033[1;35mo\033[1;32mn\033[1;31mg \033[1;34mD\033[1;33me\033[1;36mv\033[1;36m🍉 - Tool\033[1;36m Vip \033[1;31m\033[1;32m",
-            "\033[1;34mH\033[1;31mu\033[1;37mo\033[1;36mn\033[1;32mg \033[1;35mD\033[1;37me\033[1;33mv\033[1;32m🍉 - Tool\033[1;34m Vip \033[1;31m\033[1;32m",
-            "\033[1;31mH\033[1;37mu\033[1;36mo\033[1;33mn\033[1;35mg \033[1;32mD\033[1;34me\033[1;35mv\033[1;37m🍉 - Tool\033[1;33m Vip \033[1;31m\033[1;32m",
-            "\033[1;32mH\033[1;33mu\033[1;34mo\033[1;35mn\033[1;36mg \033[1;37mD\033[1;36me\033[1;31mv\033[1;34m🍉 - Tool\033[1;31m Vip \033[1;31m\033[1;32m",
-            "\033[1;37mH\033[1;34mu\033[1;35mo\033[1;36mn\033[1;32mg \033[1;33mD\033[1;31me\033[1;37mv\033[1;34m🍉 - Tool\033[1;37m Vip \033[1;31m\033[1;32m",
-            "\033[1;34mH\033[1;33mu\033[1;37mo\033[1;35mn\033[1;31mg \033[1;36mD\033[1;36me\033[1;32mv\033[1;37m🍉 - Tool\033[1;36m Vip \033[1;31m\033[1;32m",
-            "\033[1;36mH\033[1;35mu\033[1;31mo\033[1;34mn\033[1;37mg \033[1;35mD\033[1;32me\033[1;36mv\033[1;33m🍉 - Tool\033[1;33m Vip \033[1;31m\033[1;32m",
+            "\033[1;37mH\033[1;36mu\033[1;35mo\033[1;32mn\033[1;31mg \033[1;34mD\033[1;33me\033[1;36mv\033[1;36mZen| - Tool\033[1;36m Vip \033[1;31m\033[1;32m",
+            "\033[1;34mH\033[1;31mu\033[1;37mo\033[1;36mn\033[1;32mg \033[1;35mD\033[1;37me\033[1;33mv\033[1;32mZen| - Tool\033[1;34m Vip \033[1;31m\033[1;32m",
+            "\033[1;31mH\033[1;37mu\033[1;36mo\033[1;33mn\033[1;35mg \033[1;32mD\033[1;34me\033[1;35mv\033[1;37mZen| - Tool\033[1;33m Vip \033[1;31m\033[1;32m",
+            "\033[1;32mH\033[1;33mu\033[1;34mo\033[1;35mn\033[1;36mg \033[1;37mD\033[1;36me\033[1;31mv\033[1;34mZen| - Tool\033[1;31m Vip \033[1;31m\033[1;32m",
+            "\033[1;37mH\033[1;34mu\033[1;35mo\033[1;36mn\033[1;32mg \033[1;33mD\033[1;31me\033[1;37mv\033[1;34mZen| - Tool\033[1;37m Vip \033[1;31m\033[1;32m",
+            "\033[1;34mH\033[1;33mu\033[1;37mo\033[1;35mn\033[1;31mg \033[1;36mD\033[1;36me\033[1;32mv\033[1;37mZen| - Tool\033[1;36m Vip \033[1;31m\033[1;32m",
+            "\033[1;36mH\033[1;35mu\033[1;31mo\033[1;34mn\033[1;37mg \033[1;35mD\033[1;32me\033[1;36mv\033[1;33mZen| - Tool\033[1;33m Vip \033[1;31m\033[1;32m",
         ]
         for color in colors:
             print(f"\r{color}|{remaining_time}| \033[1;31m", end="")
@@ -59,15 +59,15 @@ def LINKEDIN():
         user_linkedin1.append(data['name'])
         account_id1.append(data['id'])
         STT.append(i)
-        STATUS.append(Fore.GREEN + "Hoạt Động" + Fore.RESET)
+        STATUS.append(Fore.GREEN + "Online" + Fore.RESET)
         
         # In ra thông tin tài khoản mà không cần hiển thị dạng bảng
-        print(f'\033[1;97m•[✩]➭\033[1;36m [{i}] \033[1;91m=> \033[1;97mTên Tài Khoản┊\033[1;32m㊪ :\033[1;93m {usernametk} \033[1;91m=> \033[1;97mStatus|\033[1;32m㊪ :\033[1;93m {STATUS[-1]}')
+        print(f'\033[1;97m•[✩]➭\033[1;36m [{i}] \033[1;91m=> \033[1;97mTài Khoản┊\033[1;32m㊪ :\033[1;93m {usernametk} \033[1;91m=> \033[1;97mStatus|\033[1;32m㊪ :\033[1;93m {STATUS[-1]}')
         
         i += 1
         print(Fore.RED+'_________________________________________________________')
     # Yêu cầu người dùng chọn tài khoản bằng cách nhập số thứ tự
-    choose = int(input('\033[1;97m[\033[1;91m❣\033[1;97m] \033[1;36m✈  Nhập Tài Khoản : '))
+    choose = int(input('\033[1;97m[\033[1;91m❣\033[1;97m] \033[1;36m[Nhập Tài Khoản] '))
     os.system('cls' if os.name== 'nt' else 'clear')
     if choose >=1 or choose <= len(user_linkedin1) :
         user_tiktok1 = user_linkedin1[choose-1:choose]
@@ -77,7 +77,7 @@ def LINKEDIN():
         checkfile = os.path.isfile('COOKIELINKEDIN'+str(account_id)+'.txt')
         if checkfile == False:
             banner()
-            COOKIELINK = input(Fore.GREEN+'\033[1;97m[\033[1;91m❣\033[1;97m] \033[1;36m✈  Nhập Cookie Linkedin: ')
+            COOKIELINK = input(Fore.GREEN+'\033[1;97m[\033[1;91m❣\033[1;97m] \033[1;36m[Nhập Cookie Linkedin] ')
             createfile = open('COOKIELINKEDIN'+str(account_id)+'.txt','w')
             createfile.write(COOKIELINK)
             createfile.close()
@@ -90,8 +90,10 @@ def LINKEDIN():
             readfile.close()
         os.system('cls' if os.name== 'nt' else 'clear')
         banner()
-        choose = int(input(Fore.RED+'\033[1;97m[\033[1;91m❣\033[1;97m] \033[1;36m✈  Nhập Số Lượng Job : '))
-        DELAY = int(input(Fore.RED+'\033[1;97m[\033[1;91m❣\033[1;97m] \033[1;36m✈  Nhập Delay : '))
+        print("\033[1;97mSố lượng job: 200")
+        print("\033[1;97mDelay: 11s")
+        choose = 200
+        DELAY = 1
         print("\033[97m════════════════════════════════════════════════")
         for i in range(choose):
                 url2 = 'https://gateway.golike.net/api/advertising/publishers/linkedin/jobs?account_id='+str(account_id)+'&data=null'
@@ -151,10 +153,10 @@ def LINKEDIN():
                                         chuoi = (
                                             f"\033[1;31m\033[1;36m{dem}\033[1;31m\033[1;97m | "
                                             f"\033[1;33m{h}:{m}:{s}\033[1;31m\033[1;97m | "
-                                            f"\033[1;32msuccess\033[1;31m\033[1;97m | "
-                                            f"\033[1;31mfollow\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
-                                            f"\033[1;32m Ẩn ID\033[1;97m | \033[1;32m+{prices} \033[1;97m| "
-                                            f"\033[1;33m{tong} vnđ"
+                                            f"\033[1;32mDone\033[1;31m\033[1;97m | "
+                                            f"\033[1;31mFollow\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
+                                            f"\033[1;32m+{prices} \033[1;97m| "
+                                            f"\033[1;33m{tong} VNĐ"
                                         )
                                         print(chuoi) 
                                     
@@ -233,10 +235,10 @@ def LINKEDIN():
                                         chuoi = (
                                             f"\033[1;31m\033[1;36m{dem}\033[1;31m\033[1;97m | "
                                             f"\033[1;33m{h}:{m}:{s}\033[1;31m\033[1;97m | "
-                                            f"\033[1;32msuccess\033[1;31m\033[1;97m | "
-                                            f"\033[1;31mfollow\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
-                                            f"\033[1;32m Ẩn ID\033[1;97m | \033[1;32m+{prices} \033[1;97m| "
-                                            f"\033[1;33m{tong} vnđ"
+                                            f"\033[1;32mDone\033[1;31m\033[1;97m | "
+                                            f"\033[1;31mFollow\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
+                                            f"\033[1;32m+{prices} \033[1;97m| "
+                                            f"\033[1;33m{tong} VNĐ"
                                         )
                                         print(chuoi) 
                                     else:
@@ -300,10 +302,10 @@ def LINKEDIN():
                                             chuoi = (
                                                 f"\033[1;31m\033[1;36m{dem}\033[1;31m\033[1;97m | "
                                                 f"\033[1;33m{h}:{m}:{s}\033[1;31m\033[1;97m | "
-                                                f"\033[1;32msuccess\033[1;31m\033[1;97m | "
-                                                f"\033[1;31mfollow\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
-                                                f"\033[1;32m Ẩn ID\033[1;97m | \033[1;32m+{prices} \033[1;97m| "
-                                                f"\033[1;33m{tong} vnđ"
+                                                f"\033[1;32mDone\033[1;31m\033[1;97m | "
+                                                f"\033[1;31mFollow\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
+                                                f"\033[1;32m+{prices} \033[1;97m| "
+                                                f"\033[1;33m{tong} VNĐ"
                                             )
                                             print(chuoi) 
                                         else:
@@ -372,10 +374,10 @@ def LINKEDIN():
                                         chuoi = (
                                             f"\033[1;31m\033[1;36m{dem}\033[1;31m\033[1;97m | "
                                             f"\033[1;33m{h}:{m}:{s}\033[1;31m\033[1;97m | "
-                                            f"\033[1;32msuccess\033[1;31m\033[1;97m | "
-                                            f"\033[1;31mfollow\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
-                                            f"\033[1;32m Ẩn ID\033[1;97m | \033[1;32m+{prices} \033[1;97m| "
-                                            f"\033[1;33m{tong} vnđ"
+                                            f"\033[1;32mDone\033[1;31m\033[1;97m | "
+                                            f"\033[1;31mFollow\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
+                                            f"\033[1;32m+{prices} \033[1;97m| "
+                                            f"\033[1;33m{tong} VNĐ"
                                         )
                                         print(chuoi) 
                                     else:
@@ -439,10 +441,10 @@ def LINKEDIN():
                                             chuoi = (
                                                 f"\033[1;31m\033[1;36m{dem}\033[1;31m\033[1;97m | "
                                                 f"\033[1;33m{h}:{m}:{s}\033[1;31m\033[1;97m | "
-                                                f"\033[1;32msuccess\033[1;31m\033[1;97m | "
-                                                f"\033[1;31mfollow\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
-                                                f"\033[1;32m Ẩn ID\033[1;97m | \033[1;32m+{prices} \033[1;97m| "
-                                                f"\033[1;33m{tong} vnđ"
+                                                f"\033[1;32mDone\033[1;31m\033[1;97m | "
+                                                f"\033[1;31mFollow\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
+                                                f"\033[1;32m+{prices} \033[1;97m| "
+                                                f"\033[1;33m{tong} VNĐ"
                                             )
                                             print(chuoi) 
                                         else:
@@ -580,10 +582,10 @@ def LINKEDIN():
                                         chuoi = (
                                             f"\033[1;31m\033[1;36m{dem}\033[1;31m\033[1;97m | "
                                             f"\033[1;33m{h}:{m}:{s}\033[1;31m\033[1;97m | "
-                                            f"\033[1;32msuccess\033[1;31m\033[1;97m | "
+                                            f"\033[1;32mDone\033[1;31m\033[1;97m | "
                                             f"\033[1;31mlike\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
-                                            f"\033[1;32m Ẩn ID\033[1;97m | \033[1;32m+{prices} \033[1;97m| "
-                                            f"\033[1;33m{tong} vnđ"
+                                            f"\033[1;32m+{prices} \033[1;97m| "
+                                            f"\033[1;33m{tong} VNĐ"
                                         )
                                         print(chuoi) 
                         else:
@@ -612,20 +614,14 @@ def LINKEDIN():
 def banner():
  os.system("cls" if os.name == "nt" else "clear")
  banner = f"""
-\033[1;33m██      ██╗      ████████╗ █████╗  █████╗ ██╗
-\033[1;35m██╗    ╔██║      ╚══██╔══╝██╔══██╗██╔══██╗██║
-\033[1;36m██║████║██║ █████╗  ██║   ██║  ██║██║  ██║██║
-\033[1;37m██║    ╚██║ ╚════╝  ██║   ██║  ██║██║  ██║██║
-\033[1;32m██║     ██║         ██║   ╚█████╔╝╚█████╔╝██████╗
-\033[1;31m╚═╝     ╚═╝         ╚═╝    ╚════╝  ╚════╝ ╚═════╝\n
-\033[1;97mTool By: \033[1;32mTrịnh Hướng            \033[1;97mPhiên Bản: \033[1;32m4.0     
-\033[97m════════════════════════════════════════════════  
-\033[1;97m[\033[1;91m❣\033[1;97m]\033[1;97m Tool\033[1;31m     : \033[1;97m☞ \033[1;31mGolike - Linkedin\033[1;33m♔ \033[1;97m🔫
-\033[1;97m[\033[1;91m❣\033[1;97m]\033[1;97m Youtube\033[1;31m  : \033[1;97m☞ \033[1;36mHướng Dev - Kiếm Tiền Online\033[1;31m♔ \033[1;97m☜
-\033[1;97m[\033[1;91m❣\033[1;97m]\033[1;97m Tik Tok\033[1;31m  : \033[1;33mhttps:\033[1;32m//www.tiktok.com\033[1;31m/m@huongdev27
-\033[1;97m[\033[1;91m❣\033[1;97m]\033[1;97m Zalo\033[1;31m     : \033[1;97m☞\033[1;31m0\033[1;37m3\033[1;36m6\033[1;35m2\033[1;34m1\033[1;33m6\033[1;33m6\033[1;34m8\033[1;35m6\033[1;37m3☜
-\033[1;97m[\033[1;91m❣\033[1;97m]\033[1;97m Telegram\033[1;31m : \033[1;97m☞\033[1;32mhttps://t.me/+77MuosyD-yk4MGY1🔫\033[1;97m☜
-\033[97m════════════════════════════════════════════════
+\033[1;36m███████╗███████╗███╗   ██╗
+\033[1;36m╚══███╔╝██╔════╝████╗  ██║
+\033[1;36m  ███╔╝ █████╗  ██╔██╗ ██║
+\033[1;37m ███╔╝  ██╔══╝  ██║╚██╗██║
+\033[1;37m███████╗███████╗██║ ╚████║
+\033[1;37m╚══════╝╚══════╝╚═╝  ╚═══╝
+\033[97m═════════════════════════════
+
 """
  for X in banner:
   sys.stdout.write(X)
@@ -639,7 +635,7 @@ os.system('cls' if os.name== 'nt' else 'clear')
 banner()
 checkfile = os.path.isfile('user.txt')
 if checkfile == False:
-    AUTHUR = input(Fore.GREEN+'\033[1;97m[\033[1;91m❣\033[1;97m] \033[1;36m✈  \033[1;32mNHẬP Authorization Golike : ')
+    AUTHUR = input(Fore.GREEN+'\033[1;32m[Nhập Authorization Golike] ')
     createfile = open('user.txt','w')
     createfile.write(AUTHUR)
     createfile.close()
@@ -921,7 +917,7 @@ url1 = 'https://gateway.golike.net/api/users/me'
 checkurl1 = ses.get(url1,headers=headers).json()
     #user
 if checkurl1['status']== 200 :
-        print('DANG NHAP THANH CONG')
+        print('\033[1;97mĐăng nhập thành công !')
         time.sleep(3)
         os.system('cls' if os.name== 'nt' else 'clear')
         # banner()
@@ -932,8 +928,8 @@ if checkurl1['status']== 200 :
         coin = checkurl1['data']['coin']
         user_id = checkurl1['data']['id']
         print('________________________________________________________')
-        print(Fore.GREEN+'\033[1;97m[\033[1;91m❣\033[1;97m] \033[1;36m✈  \033[1;32mTài Khoản : '+Fore.YELLOW+username)
-        print(Fore.GREEN+'\033[1;97m[\033[1;91m❣\033[1;97m] \033[1;36m✈  \033[1;32mTổng Tiền : '+Fore.YELLOW+str(coin))
+        print(Fore.GREEN+'\033[1;97m[\033[1;97m] \033[1;32mTài Khoản : '+Fore.YELLOW+username)
+        print(Fore.GREEN+'\033[1;97m[\033[1;97m] \033[1;32mTổng Tiền : '+Fore.YELLOW+str(coin))
         print(Fore.RED+'_________________________________________________________')
         LIST()
         print(Fore.RED+'Nhập 2 Để Xóa Authorization Hiện Tại')
@@ -949,5 +945,5 @@ if checkurl1['status']== 200 :
         elif choose == 2:
                 os.remove('user.txt')
 else:
-    print(Fore.RED+'DANG NHAP THAT BAI')
+    print(Fore.RED+'\033[1;97mĐăng nhập thất bại !')
     os.remove('user.txt')
