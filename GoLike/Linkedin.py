@@ -952,5 +952,5 @@ if checkurl1['status']== 200 :
         elif choose == 2:
                 os.remove('user.txt')
 else:
-    print(Fore.RED+'\033[1;96mĐăng nhập thất bại !')
+    print(Fore.RED+'\033[1;96mĐăng nhập thất bại!')
     os.remove('user.txt')
