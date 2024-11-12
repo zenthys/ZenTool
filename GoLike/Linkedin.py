@@ -588,7 +588,7 @@ def LINKEDIN():
                                             f"\033[1;31m\033[1;36m{dem}\033[1;31m\033[1;97m | "
                                             f"\033[1;33m{h}:{m}:{s}\033[1;31m\033[1;97m | "
                                             f"\033[1;32mDone\033[1;31m\033[1;97m | "
-                                            f"\033[1;31mLike\033[1;31m\033[1;32m\033[1;32m\033[1;97m |"
+                                            f"\033[1;31mLike\033[1;31m\033[1;32m\033[1;32m\033[1;97m   |"
                                             f"\033[1;32m+{prices} \033[1;97m| "
                                             f"\033[1;33m{tong} VNĐ"
                                         )
@@ -952,5 +952,5 @@ if checkurl1['status']== 200 :
         elif choose == 2:
                 os.remove('user.txt')
 else:
-    print(Fore.RED+'\033[1;96mĐăng nhập thất bại!')
+    print(Fore.RED+'\033[1;96mĐăng nhập thất bại !')
     os.remove('user.txt')
