@@ -32,7 +32,7 @@ def countdown(time_sec):
             time.sleep(0.12)
                                   
     print("\r                          \r", end="") 
-    print("\036[1;35mĐang Nhận Tiền         ",end = "\r")
+    print("\033[1;35mĐang Nhận Tiền         ",end = "\r")
     # while time_sec:
     #     mins, secs = divmod(time_sec, 60)
         
