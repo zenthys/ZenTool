@@ -19,15 +19,8 @@ except ImportError:
 def countdown(time_sec):
     for remaining_time in range(time_sec, -1, -1):
         colors = [
-            "\033[1;36m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
-            "\033[1;32m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
-            "\033[1;37m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
-            "\033[1;34m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
-            "\033[1;34m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
-            "\033[1;37m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
-            "\033[1;33m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
-            "\033[1;35m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
-            "\033[1;39m[ZenTool][Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+            "\033[1;46m[Đang Hoàn Thành Job] \033[1;31m\033[1;32m",
+
         ]
         for color in colors:
             print(f"\r{color}[{remaining_time}] \033[1;31m", end="")
@@ -628,6 +621,7 @@ def banner():
 \033[1;37m ███╔╝  ██╔══╝  ██║╚██╗██║
 \033[1;37m███████╗███████╗██║ ╚████║ \033[1;31mv1.0
 \033[1;37m╚══════╝╚══════╝╚═╝  ╚═══╝ 
+\033[1;37m
 
 """
  for X in banner:
