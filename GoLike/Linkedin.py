@@ -626,10 +626,10 @@ def banner():
 \033[1;36m╚══███╔╝██╔════╝████╗  ██║
 \033[1;36m  ███╔╝ █████╗  ██╔██╗ ██║
 \033[1;37m ███╔╝  ██╔══╝  ██║╚██╗██║
-\033[1;37m███████╗███████╗██║ ╚████║
-\033[1;37m╚══════╝╚══════╝╚═╝  ╚═══╝ \033[1;31mv1.0
+\033[1;37m███████╗███████╗██║ ╚████║ \033[1;31mv1.0
+\033[1;37m╚══════╝╚══════╝╚═╝  ╚═══╝ 
 \033[1;37m
-\033[1;36mĐang đăng nhập !
+
 """
  for X in banner:
   sys.stdout.write(X)
@@ -920,7 +920,7 @@ headers = {'Accept-Language':'vi,en-US;q=0.9,en;q=0.8',
             "Authorization" : file,
             'Content-Type':'application/json;charset=utf-8'            
 }
-
+print('\033[1;36mĐang đăng nhập !')
 url1 = 'https://gateway.golike.net/api/users/me'
 checkurl1 = ses.get(url1,headers=headers).json()
     #user
