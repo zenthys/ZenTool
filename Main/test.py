@@ -92,7 +92,7 @@ def LINKEDIN():
         banner()
         print("\033[1;36m| Jobs Auto : 200 |")
         choose = 200
-        DELAY = input('\033[1;36m| Nhập Delay |: ')
+        DELAY = int(input('\033[1;36m| Nhập Delay |: '))
         print("\033[97m════════════════════════════════════════════════")
         for i in range(choose):
                 url2 = 'https://gateway.golike.net/api/advertising/publishers/linkedin/jobs?account_id='+str(account_id)+'&data=null'
